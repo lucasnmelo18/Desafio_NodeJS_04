@@ -38,6 +38,23 @@ app.listen(PORT, () => {
 
 
 	// CÓDIGO PARA ATENDER OS REQUERIMENTOS
-	// R01, R02, R03, R04, R05
-	
+	class Aluno {
+		constructor(
+		readonly	Nome:string, 
+		readonly	Idade:number, 
+		readonly	Nota:number,)
+		{
+		}
+}
+var aluno1 = new Aluno ('Lucas', 9, 9,);
+var aluno2 = new Aluno ('Matheus', 10, 9,);
+var aluno3 = new Aluno ('Amaral', 8, 7,);
+
+
+let alunos: Array<Aluno> = [aluno1, aluno2, aluno3];
+
+console.log(Aluno);
+console.log(alunos);
+
+
 });
