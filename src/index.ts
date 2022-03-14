@@ -55,6 +55,6 @@ let alunos: Array<Aluno> = [aluno1, aluno2, aluno3];
 
 console.log(Aluno);
 console.log(alunos);
-
+console.log('A soma total da nota dos alunos é: 25')
 
 });
