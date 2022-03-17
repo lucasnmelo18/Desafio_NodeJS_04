@@ -6,6 +6,7 @@ import * as dotenv from "dotenv";
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
+import { ReadLine } from "readline";
 
 dotenv.config();
 
@@ -40,21 +41,23 @@ app.listen(PORT, () => {
 	// CÓDIGO PARA ATENDER OS REQUERIMENTOS
 	class Aluno {
 		constructor(
-		readonly	Nome:string, 
-		readonly	Idade:number, 
-		readonly	Nota:number,)
-		{
-		}
-}
-var aluno1 = new Aluno ('Lucas', 9, 9,);
-var aluno2 = new Aluno ('Matheus', 10, 9,);
-var aluno3 = new Aluno ('Amaral', 8, 7,);
+			readonly	Nome:string,
+			readonly	Idade:number,
+			readonly	Nota:number,)
+			{
+			}
+	
+	}
+	
+		var aluno1 = new Aluno ('Lucas', 9, 9,);
+		var aluno2 = new Aluno ('Matheus', 10, 9,);
+		var aluno3 = new Aluno ('Amaral', 8, 7,);
+	
+		let alunos: Array<Aluno> = [aluno1, aluno2, aluno3,];
+	
+		var soma = aluno1.Nota + aluno2.Nota + aluno3.Nota;
 
-
-let alunos: Array<Aluno> = [aluno1, aluno2, aluno3];
-
-console.log(Aluno);
-console.log(alunos);
-console.log('A soma total da nota dos alunos é: 25')
-
-});
+		console.log(Aluno);
+		console.log(alunos);
+		console.log(`A soma total das notas é: ${soma}`); 
+	});
